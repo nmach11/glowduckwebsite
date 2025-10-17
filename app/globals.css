@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navigation styles */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #FF8284;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF8284;
+}
+
+.nav-download-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.store-button-img {
+  display: block;
+  object-fit: contain;
+}
+
+.store-button-img.nav-size {
+  height: 40px;
+}
+
+.store-button-img.nav-size[alt*="App Store"] {
+  width: 120px;
+}
+
+.store-button-img.nav-size[alt*="Google Play"] {
+  width: 120px;
+  transform: scale(1.5);
+  transform-origin: center center;
+}
+
+/* Footer styles */
+.footer {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-section h3 {
+  color: #FF8284;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #FF8284;
+}
