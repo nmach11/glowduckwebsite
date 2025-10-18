@@ -1,4 +1,46 @@
+'use client';
+
+import { useEffect } from 'react';
+
 export default function Home() {
+  const scrollToSection = (sectionNumber: number) => {
+    const section = document.getElementById('section' + sectionNumber);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      updateActiveDot(sectionNumber);
+    }
+  };
+
+  const updateActiveDot = (activeSection: number) => {
+    const dots = document.querySelectorAll('.scroll-dot');
+    dots.forEach((dot, index) => {
+      if (index + 1 === activeSection) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('.section');
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          updateActiveDot(index + 1);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
       <div id="section1" className="section section-bg-1">
@@ -39,43 +81,6 @@ export default function Home() {
         <div className="scroll-dot" onClick={() => scrollToSection(7)}></div>
         <div className="scroll-dot" onClick={() => scrollToSection(8)}></div>
       </div>
-
-      <script dangerouslySetInnerHTML={{
-        __html: `
-          function scrollToSection(sectionNumber) {
-            const section = document.getElementById('section' + sectionNumber);
-            if (section) {
-              section.scrollIntoView({ behavior: 'smooth' });
-              updateActiveDot(sectionNumber);
-            }
-          }
-
-          function updateActiveDot(activeSection) {
-            const dots = document.querySelectorAll('.scroll-dot');
-            dots.forEach((dot, index) => {
-              if (index + 1 === activeSection) {
-                dot.classList.add('active');
-              } else {
-                dot.classList.remove('active');
-              }
-            });
-          }
-
-          window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('.section');
-            const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-            sections.forEach((section, index) => {
-              const sectionTop = section.offsetTop;
-              const sectionHeight = section.offsetHeight;
-
-              if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                updateActiveDot(index + 1);
-              }
-            });
-          });
-        `
-      }} />
     </>
-  )
+  );
 }
