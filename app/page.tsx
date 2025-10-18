@@ -28,8 +28,9 @@ export default function Home() {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       sections.forEach((section, index) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+        const htmlSection = section as HTMLElement;
+        const sectionTop = htmlSection.offsetTop;
+        const sectionHeight = htmlSection.offsetHeight;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
           updateActiveDot(index + 1);
