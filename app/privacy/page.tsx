@@ -13,13 +13,13 @@ export default function Privacy() {
         <p>Last updated: October 17th 2025</p>
 
         <h2>Introduction</h2>
-        <p>GlowDuck (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) provides a mobile app and website (the &quot;Service&quot;) that helps you track skin progress, build habits, and receive friendly AI insights. This Privacy Policy explains what we collect, how we use it, and your choices.</p>
+        <p>GlowDuck ("we", "our", "us") provides a mobile app and website (the "Service") that helps you track skin progress, build habits, and receive friendly AI insights. This Privacy Policy explains what we collect, how we use it, and your choices.</p>
 
         <h2>Information We Collect</h2>
         <ul>
           <li>Account info: Email and display name.</li>
           <li>Habit and progress data: Habits you track and completion records.</li>
-          <li>Weekly progress photos: If you take a weekly face photo, it is saved on your device by default (see "Photos and AI Analysis").</li>
+          <li>Weekly progress photos: If you take a weekly face photo, it is saved on your device by default (see &quot;Photos and AI Analysis&quot;).</li>
           <li>Analytics: Anonymous usage and performance metrics (no IDFA unless you explicitly adopt ATT).</li>
         </ul>
 
