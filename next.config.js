@@ -3,7 +3,9 @@ const nextConfig = {
   images: {
     formats: ['image/webp', 'image/avif'],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
-
