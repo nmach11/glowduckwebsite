@@ -13,7 +13,7 @@ export default function Privacy() {
         <p>Last updated: October 17th 2025</p>
 
         <h2>Introduction</h2>
-        <p>GlowDuck ("we", "our", "us") provides a mobile app and website (the "Service") that helps you track skin progress, build habits, and receive friendly AI insights. This Privacy Policy explains what we collect, how we use it, and your choices.</p>
+        <p>GlowDuck (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) provides a mobile app and website (the &quot;Service&quot;) that helps you track skin progress, build habits, and receive friendly AI insights. This Privacy Policy explains what we collect, how we use it, and your choices.</p>
 
         <h2>Information We Collect</h2>
         <ul>
@@ -26,7 +26,7 @@ export default function Privacy() {
         <h2>Photos and AI Analysis</h2>
         <ul>
           <li>On-device storage: Your weekly progress photos are stored locally on your device by default.</li>
-          <li>AI analysis: If you initiate analysis, the app may send the current week's photo to our AI processing service to generate scores and friendly feedback. When implemented server-side, we will use short‑lived, access‑controlled handling and delete uploaded copies promptly after analysis.</li>
+          <li>AI analysis: If you initiate analysis, the app may send the current week&apos;s photo to our AI processing service to generate scores and friendly feedback. When implemented server-side, we will use short‑lived, access‑controlled handling and delete uploaded copies promptly after analysis.</li>
           <li>We do not publish or share your photos with other users.</li>
         </ul>
 
@@ -54,14 +54,14 @@ export default function Privacy() {
         <ul>
           <li>Photos: Photos are stored on-device by default. You control whether to take a weekly photo. Per‑photo deletion is not currently available in-app; you can delete all app data or request account deletion (below). We plan to add finer controls in future updates.</li>
           <li>Notifications: You can enable/disable in device settings.</li>
-          <li>Account deletion: You can request deletion of your account and associated data we store off-device. Device-stored photos remain on your device until you remove them (e.g., by deleting the app's data or using future in-app deletion tools).</li>
+          <li>Account deletion: You can request deletion of your account and associated data we store off-device. Device-stored photos remain on your device until you remove them (e.g., by deleting the app&apos;s data or using future in-app deletion tools).</li>
         </ul>
 
-        <h2>Children's Privacy</h2>
+        <h2>Children&apos;s Privacy</h2>
         <p>The Service is not intended for children under 13, and we do not knowingly collect data from children under 13.</p>
 
         <h2>Changes</h2>
-        <p>We may update this policy as the Service evolves. We'll post updates here and update the "Last updated" date.</p>
+        <p>We may update this policy as the Service evolves. We&apos;ll post updates here and update the &quot;Last updated&quot; date.</p>
 
         <h2>Contact</h2>
         <p>Questions about privacy? Contact: <a href="mailto:support@glowduck.app">support@glowduck.app</a></p>

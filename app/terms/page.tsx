@@ -13,10 +13,10 @@ export default function Terms() {
         <p>Last updated: October 17th 2025</p>
 
         <h2>1. Agreement</h2>
-        <p>By using GlowDuck (the "App"), you agree to these Terms. If you do not agree, do not use the App.</p>
+        <p>By using GlowDuck (the &quot;App&quot;), you agree to these Terms. If you do not agree, do not use the App.</p>
 
         <h2>2. Service Description</h2>
-        <p>GlowDuck provides habit tracking, weekly skin progress photos, and AI-generated insights about the user's skin presented in accessible, friendly language (not professional or medical advice).</p>
+        <p>GlowDuck provides habit tracking, weekly skin progress photos, and AI-generated insights about the user&apos;s skin presented in accessible, friendly language (not professional or medical advice).</p>
 
         <h2>3. Accounts</h2>
         <ul>
@@ -28,7 +28,7 @@ export default function Terms() {
         <h2>4. Subscriptions and Billing</h2>
         <ul>
           <li>Monthly plan with intro pricing: First month $0.99, then $4.99/month (prices shown in USD and may vary by region/tax).</li>
-          <li>Auto‑renewal: Subscriptions renew automatically until cancelled. Manage/cancel anytime in your device's subscription settings.</li>
+          <li>Auto‑renewal: Subscriptions renew automatically until cancelled. Manage/cancel anytime in your device&apos;s subscription settings.</li>
           <li>Cancellation: No partial refunds; you retain access until the current period ends.</li>
           <li>Pricing changes: Future price changes will be communicated and applied per platform policies.</li>
         </ul>
@@ -51,7 +51,7 @@ export default function Terms() {
         <p>We own the App, brand, and related IP. You receive a personal, non-transferable license to use the App as intended.</p>
 
         <h2>9. Warranty Disclaimer</h2>
-        <p>The Service is provided "as is" without warranties. We do not guarantee uninterrupted or error‑free operation.</p>
+        <p>The Service is provided &quot;as is&quot; without warranties. We do not guarantee uninterrupted or error‑free operation.</p>
 
         <h2>10. Limitation of Liability</h2>
         <p>To the maximum extent permitted by law, our liability is limited to the amount you paid for the Service in the 12 months preceding the claim and excludes consequential damages.</p>
