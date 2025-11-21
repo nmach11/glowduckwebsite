@@ -1,8 +1,17 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [isIOS, setIsIOS] = useState(false);
+
+  useEffect(() => {
+    // Detect iOS devices
+    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    setIsIOS(iOS);
+  }, []);
+
   const scrollToSection = (sectionNumber: number) => {
     const section = document.getElementById('section' + sectionNumber);
     if (section) {
@@ -49,9 +58,11 @@ export default function Home() {
           <a href="https://apps.apple.com" className="download-btn" target="_blank" rel="noopener noreferrer">
             <img src="/images/buttons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" className="store-button-img section-size" />
           </a>
-          <a href="https://play.google.com" className="download-btn" target="_blank" rel="noopener noreferrer">
-            <img src="/images/buttons/GetItOnGooglePlay_Badge_Web_color_English-01.svg" alt="Get it on Google Play" className="store-button-img section-size" />
-          </a>
+          {!isIOS && (
+            <a href="https://play.google.com" className="download-btn" target="_blank" rel="noopener noreferrer">
+              <img src="/images/buttons/GetItOnGooglePlay_Badge_Web_color_English-01.svg" alt="Get it on Google Play" className="store-button-img section-size" />
+            </a>
+          )}
         </div>
       </div>
 
@@ -66,9 +77,11 @@ export default function Home() {
           <a href="https://apps.apple.com" className="download-btn" target="_blank" rel="noopener noreferrer">
             <img src="/images/buttons/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" className="store-button-img section-size" />
           </a>
-          <a href="https://play.google.com" className="download-btn" target="_blank" rel="noopener noreferrer">
-            <img src="/images/buttons/GetItOnGooglePlay_Badge_Web_color_English-01.svg" alt="Get it on Google Play" className="store-button-img section-size" />
-          </a>
+          {!isIOS && (
+            <a href="https://play.google.com" className="download-btn" target="_blank" rel="noopener noreferrer">
+              <img src="/images/buttons/GetItOnGooglePlay_Badge_Web_color_English-01.svg" alt="Get it on Google Play" className="store-button-img section-size" />
+            </a>
+          )}
         </div>
       </div>
 
