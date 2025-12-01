@@ -10,25 +10,116 @@ export default function Privacy() {
     <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
       <article className="prose prose-lg max-w-3xl mx-auto">
         <h1>Privacy Policy</h1>
-        <p>Last updated: November 6th, 2024</p>
+        <p>Last updated: November 30th, 2025</p>
 
         <h2>Introduction</h2>
-        <p>GlowDuck (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) provides a mobile app and website (the &quot;Service&quot;) that helps you track skin progress, build habits, and receive friendly AI insights. This Privacy Policy explains what we collect, how we use it, and your choices.</p>
+        <p>GlowDuck (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;) provides a mobile app and website (the &quot;Service&quot;) that helps you track skin progress, build habits, and receive AI insights. This Privacy Policy explains what we collect, how we use it, and your choices.</p>
 
         <h2>Information We Collect</h2>
         <ul>
-          <li>Account info: Email and display name.</li>
-          <li>Habit and progress data: Habits you track and completion records.</li>
-          <li>Weekly progress photos: If you take a weekly face photo, it is saved on your device by default (see &quot;Photos and AI Analysis&quot;).</li>
-          <li>Analytics: Anonymous usage and performance metrics (no IDFA unless you explicitly adopt ATT).</li>
+          <li><strong>Account info:</strong> Email and display name.</li>
+          <li><strong>Habit and progress data:</strong> Habits you track and completion records.</li>
+          <li><strong>Weekly progress photos:</strong> If you take a weekly face photo, it is saved on your device by default (see &quot;Photos and AI Analysis&quot;).</li>
+          <li><strong>Analytics:</strong> Anonymous usage and performance metrics (no IDFA unless you explicitly adopt ATT).</li>
+        </ul>
+
+        <h2>Face Data Collection and Use</h2>
+        <p><strong>What Face Data We Collect:</strong></p>
+        <p>GlowDuck collects photos of your face that you voluntarily upload for skin progress tracking. These photos contain facial images that are analyzed to provide personalized skincare insights.</p>
+        <p><strong>How We Use Your Face Data:</strong></p>
+        <ul>
+          <li><strong>Face Detection:</strong> We verify that uploaded images contain a clear view of your face suitable for analysis</li>
+          <li><strong>Skin Health Analysis:</strong> We analyze your face to assess skin metrics including:
+            <ul>
+              <li>Clarity (blemishes, spots)</li>
+              <li>Dark spots and hyperpigmentation</li>
+              <li>Redness and inflammation</li>
+              <li>Skin texture</li>
+              <li>Hydration levels</li>
+              <li>Eye bags</li>
+            </ul>
+          </li>
+          <li><strong>Progress Tracking:</strong> We compare your face photos over time to track improvements in your skin health</li>
+          <li><strong>Personalized Recommendations:</strong> We use analysis results to recommend skincare products tailored to your specific skin concerns</li>
+        </ul>
+        <p><strong>Third-Party Sharing:</strong></p>
+        <p>Your face photos are shared with the following third-party service providers:</p>
+        <ol>
+          <li>
+            <strong>Anthropic (Claude AI)</strong>
+            <ul>
+              <li>Purpose: AI-powered face detection and skin analysis</li>
+              <li>Data Shared: Face photos uploaded by you</li>
+              <li>Privacy Policy: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer">https://www.anthropic.com/privacy</a></li>
+              <li>Data Retention: Anthropic does not retain your images after processing (as per their privacy policy)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Firebase (Google LLC)</strong>
+            <ul>
+              <li>Purpose: Secure cloud storage of your face photos</li>
+              <li>Data Shared: Face photos stored in Firebase Storage</li>
+              <li>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
+              <li>Data Retention: Stored until you delete your account</li>
+            </ul>
+          </li>
+        </ol>
+        <p><strong>Where Face Data is Stored:</strong></p>
+        <ul>
+          <li><strong>Local Device:</strong> Photos are stored on your device in the app&apos;s private storage</li>
+          <li><strong>Firebase Storage (Cloud):</strong> Photos are uploaded to Firebase Storage for AI analysis and progress tracking</li>
+          <li><strong>Anthropic Servers:</strong> Photos are temporarily sent to Anthropic&apos;s servers for AI analysis, but are not retained after processing</li>
+        </ul>
+        <p><strong>Data Retention:</strong></p>
+        <ul>
+          <li><strong>Active Accounts:</strong> Face photos are retained for as long as your account is active</li>
+          <li><strong>After Account Deletion:</strong> All face photos are permanently deleted from Firebase Storage within 30 days of account deletion</li>
+          <li><strong>Local Device:</strong> Photos remain on your device until you delete the app or manually delete them through the app</li>
+          <li><strong>Anthropic:</strong> Face photos are not retained by Anthropic after analysis is complete (processing only, no storage)</li>
+        </ul>
+        <p><strong>Your Rights:</strong></p>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access your face photos at any time through the app</li>
+          <li>Delete all face photos by deleting your account</li>
+          <li>Request deletion of your face data at any time by contacting <a href="mailto:support@glowduck.app">support@glowduck.app</a></li>
+        </ul>
+        <p><strong>Security:</strong></p>
+        <ul>
+          <li>All face photos are encrypted in transit (TLS/SSL) and at rest (AES-256 encryption)</li>
+          <li>Access to face photos is restricted to authenticated users only</li>
+          <li>Face photos are stored in private, user-specific Firebase Storage buckets</li>
+        </ul>
+
+        <h2>Product Recommendations and Affiliate Links</h2>
+        <p><strong>How Product Recommendations Work:</strong></p>
+        <p>Based on your skin analysis results, our AI recommends skincare products that may help address your specific skin concerns. These product recommendations are generated using your face data analysis (see &quot;Face Data Collection and Use&quot; section above).</p>
+        <p><strong>Amazon Affiliate Program:</strong></p>
+        <ul>
+          <li>Product recommendations include links to Amazon.com</li>
+          <li>These links are affiliate links through the Amazon Associates program</li>
+          <li><strong>As an Amazon Associate, we earn from qualifying purchases</strong></li>
+          <li>You are not required to purchase any recommended products</li>
+          <li>Product recommendations are suggestions only and do not constitute medical advice</li>
+        </ul>
+        <p><strong>What This Means:</strong></p>
+        <ul>
+          <li>When you click on a product recommendation and make a purchase on Amazon, we may receive a small commission</li>
+          <li>This does not affect the price you pay for products</li>
+          <li>We only recommend products from our curated list that are available on Amazon</li>
+          <li>Product recommendations are personalized based on your skin analysis, but you are free to choose any products you prefer</li>
+        </ul>
+        <p><strong>Your Choice:</strong></p>
+        <ul>
+          <li>You are under no obligation to purchase any recommended products</li>
+          <li>Product recommendations are provided for your convenience and information only</li>
+          <li>You can ignore product recommendations and continue using the app&apos;s other features</li>
         </ul>
 
         <h2>Photos and AI Analysis</h2>
-        <ul>
-          <li>On-device storage: Your weekly progress photos are stored locally on your device by default.</li>
-          <li>AI analysis: If you initiate analysis, the app may send the current week&apos;s photo to our AI processing service to generate scores and friendly feedback. When implemented server-side, we will use short‑lived, access‑controlled handling and delete uploaded copies promptly after analysis.</li>
-          <li>We do not publish or share your photos with other users.</li>
-        </ul>
+        <p><strong>On-device storage:</strong> Your weekly progress photos are stored locally on your device by default.</p>
+        <p><strong>AI analysis:</strong> If you initiate analysis, the app sends the current week&apos;s photo to our AI processing service (Anthropic Claude AI) to generate scores and friendly feedback. We use short‑lived, access‑controlled handling and delete uploaded copies promptly after analysis. For detailed information about how we handle face data, see the &quot;Face Data Collection and Use&quot; section above.</p>
+        <p>We do not publish or share your photos with other users.</p>
 
         <h2>How We Use Data</h2>
         <ul>
@@ -39,48 +130,44 @@ export default function Privacy() {
 
         <h2>Third-Party Services</h2>
         <p>We use the following trusted third-party services to operate GlowDuck:</p>
-        <ol>
-          <li>
-            <strong>Firebase (Google LLC)</strong>
-            <ul>
-              <li>Services: Authentication, Cloud Firestore, Cloud Storage, Analytics, Crashlytics, Performance Monitoring, Cloud Functions</li>
-              <li>Purpose: Core app infrastructure, user authentication, data storage, analytics, crash reporting</li>
-              <li>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
-            </ul>
-          </li>
-          <li>
-            <strong>RevenueCat</strong>
-            <ul>
-              <li>Services: Subscription management and purchase tracking</li>
-              <li>Purpose: Process and manage your subscription</li>
-              <li>Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a></li>
-            </ul>
-          </li>
-          <li>
-            <strong>Apple Sign In</strong>
-            <ul>
-              <li>Service: Apple authentication</li>
-              <li>Purpose: Secure sign-in with your Apple ID</li>
-              <li>Privacy Policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/privacy/</a></li>
-            </ul>
-          </li>
-          <li>
-            <strong>Google Sign In</strong>
-            <ul>
-              <li>Service: Google authentication</li>
-              <li>Purpose: Secure sign-in with your Google account</li>
-              <li>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
-            </ul>
-          </li>
-          <li>
-            <strong>OpenAI</strong>
-            <ul>
-              <li>Service: AI image analysis</li>
-              <li>Purpose: Generate skin progress insights from your photos</li>
-              <li>Privacy Policy: <a href="https://openai.com/privacy" target="_blank" rel="noopener noreferrer">https://openai.com/privacy</a></li>
-            </ul>
-          </li>
-        </ol>
+        <p><strong>Firebase (Google LLC)</strong></p>
+        <ul>
+          <li>Services: Authentication, Cloud Firestore, Cloud Storage, Analytics, Crashlytics, Performance Monitoring, Cloud Functions</li>
+          <li>Purpose: Core app infrastructure, user authentication, data storage, analytics, crash reporting</li>
+          <li>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+        <p><strong>RevenueCat</strong></p>
+        <ul>
+          <li>Services: Subscription management and purchase tracking</li>
+          <li>Purpose: Process and manage your subscription</li>
+          <li>Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">https://www.revenuecat.com/privacy</a></li>
+        </ul>
+        <p><strong>Apple Sign In</strong></p>
+        <ul>
+          <li>Service: Apple authentication</li>
+          <li>Purpose: Secure sign-in with your Apple ID</li>
+          <li>Privacy Policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/privacy/</a></li>
+        </ul>
+        <p><strong>Google Sign In</strong></p>
+        <ul>
+          <li>Service: Google authentication</li>
+          <li>Purpose: Secure sign-in with your Google account</li>
+          <li>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+        </ul>
+        <p><strong>Anthropic (Claude AI)</strong></p>
+        <ul>
+          <li>Service: AI image analysis and face detection</li>
+          <li>Purpose: Generate skin progress insights from your photos and detect faces in uploaded images</li>
+          <li>Privacy Policy: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener noreferrer">https://www.anthropic.com/privacy</a></li>
+          <li>Data Retention: Does not retain images after processing</li>
+        </ul>
+        <p><strong>Amazon Associates</strong></p>
+        <ul>
+          <li>Service: Product recommendation links</li>
+          <li>Purpose: Provide personalized skincare product recommendations through affiliate links</li>
+          <li>Privacy Policy: <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496" target="_blank" rel="noopener noreferrer">https://www.amazon.com/gp/help/customer/display.html?nodeId=468496</a></li>
+          <li>Note: We earn commissions from qualifying purchases made through our affiliate links</li>
+        </ul>
         <p>These services may process your data according to their own privacy policies. We ensure all service providers are bound by confidentiality agreements and security obligations.</p>
 
         <h2>Data Security</h2>
@@ -136,6 +223,7 @@ export default function Privacy() {
           <li>Photos stored on your device remain until you delete the app or clear app data</li>
           <li>If you initiated AI analysis, server-side copies are deleted immediately after processing</li>
           <li>No long-term server storage of photos unless explicitly needed for a feature you opted into</li>
+          <li>For detailed face data retention information, see the &quot;Face Data Collection and Use&quot; section above</li>
         </ul>
 
         <h2>International Data Transfers</h2>
@@ -205,7 +293,7 @@ export default function Privacy() {
         <p>Email: <a href="mailto:support@glowduck.app">support@glowduck.app</a></p>
         <p><strong>EU Data Protection Officer:</strong></p>
         <p>If you&apos;re in the EU and need to contact our Data Protection Officer:</p>
-        <p>Email: <a href="mailto:privacy@glowduck.app">privacy@glowduck.app</a></p>
+        <p>Email: <a href="mailto:support@glowduck.app">support@glowduck.app</a></p>
         <p><strong>Response Time:</strong></p>
         <ul>
           <li>General inquiries: 3-5 business days</li>
